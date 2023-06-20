@@ -27,6 +27,7 @@ module.exports = {
         tablet: "580px",
         desktop: "1140px",
         form: "525px",
+        main: "730px",
       },
     },
   },
