@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.html"],
+  purge: {
+    enabled: true,
+    content: ["./src/**/*.html"],
+  },
   theme: {
     extend: {
       colors: {
@@ -13,11 +16,21 @@ module.exports = {
       fontFamily: {
         "Nunito-Sans": ["Nunito Sans", "sans-serif"],
       },
+      fontSize: {
+        56: "56px",
+      },
       letterSpacing: {
         "01em": "0.01em",
       },
       lineHeight: {
         49: "49px",
+        71: "71px",
+      },
+      maxWidth: {
+        tablet: "580px",
+        desktop: "1140px",
+        form: "525px",
+        main: "730px",
       },
     },
   },
