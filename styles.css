@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+  .button-blue {
+    @apply block bg-medium-blue text-white font-bold text-center w-36 py-4 rounded-md mt-3;
+  }
+}
